@@ -1,0 +1,2 @@
+# dnscrypt
+dnscrypt via docker
