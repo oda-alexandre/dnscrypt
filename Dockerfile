@@ -5,7 +5,6 @@ MAINTAINER https://oda-alexandre.github.io
 # INSTALLATION DE L'APPLICATION
 RUN apt-get update && apt-get install --no-install-recommends -y \
 sudo \
-ca-certificates \
 dnscrypt-proxy
 
 # AJOUT DE L(UTILISATEUR
@@ -27,4 +26,4 @@ sudo rm -rf /var/cache/apt/archives/* && \
 sudo rm -rf /var/lib/apt/lists/*
 
 # COMMANDE AU DEMARRAGE DU CONTENEUR
-CMD sudo dnscrypt-proxy -R dnscrypt.eu-dk /etc/dnscrypt-proxy/dnscrypt-proxy.conf
+CMD sudo dnscrypt-proxy -R dnscrypt.org-fr /etc/dnscrypt-proxy/dnscrypt-proxy.conf

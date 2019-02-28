@@ -30,7 +30,7 @@ Installer [docker](https://www.docker.com)
 ## INSTALLATION
 
 ```
-docker run -ti --name dnscrypt -v /etc/localtime:/etc/localtime:ro --network host --restart=always alexandreoda/dnscrypt
+docker run -ti --name dnscrypt --network host --restart=always alexandreoda/dnscrypt
 ```
 
 
