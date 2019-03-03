@@ -1,25 +1,32 @@
 # DNSCRYPT
 
-![dnscrypt](https://raw.githubusercontent.com/oda-alexandre/dnscrypt/master/img/logo-dnscrypt.png) ![docker](https://raw.githubusercontent.com/oda-alexandre/dnscrypt/master/img/logo-docker.png)
+[![dockeri.co](https://dockeri.co/image/alexandreoda/dnscrypt)](https://hub.docker.com/r/alexandreoda/dnscrypt)
 
 
 ## INDEX
 
-- [Build Docker](#BUILD)
+- [Badges](#BADGES)
 - [Introduction](#INTRODUCTION)
 - [Prerequis](#PREREQUIS)
 - [Installation](#INSTALLATION)
 - [License](#LICENSE)
 
 
-## BUILD DOCKER
+## BADGES
 
-[![dnscrypt docker build](https://img.shields.io/docker/build/alexandreoda/dnscrypt.svg)](https://hub.docker.com/r/alexandreoda/dnscrypt)
+[![version](https://images.microbadger.com/badges/version/alexandreoda/dnscrypt.svg)](https://microbadger.com/images/alexandreoda/dnscrypt)
+[![size](https://images.microbadger.com/badges/image/alexandreoda/dnscrypt.svg)](https://microbadger.com/images/alexandreoda/dnscrypt")
+[![build](https://img.shields.io/docker/build/alexandreoda/dnscrypt.svg)](https://hub.docker.com/r/alexandreoda/dnscrypt)
+[![automated](https://img.shields.io/docker/automated/alexandreoda/dnscrypt.svg)](https://hub.docker.com/r/alexandreoda/dnscrypt)
 
 
 ## INTRODUCTION
 
-Ce repository contient le fichier Dockerfile de [dnscrypt](https://www.dnscrypt.org/) pour [docker](https://www.docker.com), mis à jour automatiquement dans le [docker hub](https://hub.docker.com/r/alexandreoda/dnscrypt/) public.
+Ce repository contient le fichier Dockerfile de
+
+- [dnscrypt](https://www.dnscrypt.org/)
+
+Mis à jour automatiquement dans le [docker hub public](https://hub.docker.com/r/alexandreoda/dnscrypt/).
 
 
 ## PREREQUIS

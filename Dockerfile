@@ -1,22 +1,28 @@
 FROM debian:stretch-slim
 
-MAINTAINER https://oda-alexandre.github.io
+MAINTAINER https://oda-alexandre.com
+
+# VARIABLES
+ENV USER dnscrypt
+ENV LANG fr_FR.UTF-8
+ENV VERSION 3.3.1.0
+ENV DEBIAN_FRONTEND noninteractive
 
 # INSTALLATION DE L'APPLICATION
 RUN apt-get update && apt-get install --no-install-recommends -y \
 sudo \
-dnscrypt-proxy
+dnscrypt-proxy && \
 
-# AJOUT DE L(UTILISATEUR
-RUN useradd -d /home/dnscrypt -m dnscrypt && \
-passwd -d dnscrypt && \
-adduser dnscrypt sudo
+# AJOUT UTILISATEUR
+useradd -d /home/${USER} -m ${USER} && \
+passwd -d ${USER} && \
+adduser ${USER} sudo
 
-# SELECTION DE L'UTILISATEUR
-USER dnscrypt
+# SELECTION UTILISATEUR
+USER ${USER}
 
-# SELECTION DE L'ESPACE DE TRAVAIL
-WORKDIR /home/dnscrypt
+# SELECTION ESPACE DE TRAVAIL
+WORKDIR /home/${USER}
 
 # NETTOYAGE
 RUN sudo apt-get --purge autoremove -y && \
