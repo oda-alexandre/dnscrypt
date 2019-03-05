@@ -3,10 +3,10 @@ FROM debian:stretch-slim
 MAINTAINER https://oda-alexandre.com
 
 # VARIABLES
-ENV USER dnscrypt \
-LANG fr_FR.UTF-8 \
-VERSION 3.3.1.0 \
-DEBIAN_FRONTEND noninteractive
+ENV USER dnscrypt
+ENV LANG fr_FR.UTF-8
+ENV VERSION 3.3.1.0
+ENV DEBIAN_FRONTEND noninteractive
 
 # INSTALLATION DE L'APPLICATION
 RUN apt-get update && apt-get install --no-install-recommends -y \
