@@ -1,6 +1,6 @@
 # DNSCRYPT
 
-[![dockeri.co](https://dockeri.co/image/alexandreoda/dnscrypt)](https://hub.docker.com/r/alexandreoda/dnscrypt)
+<img src="https://dnscrypt.info/_nuxt/img/dnscrypt.cd47d19.png" />
 
 
 ## INDEX
@@ -14,10 +14,7 @@
 
 ## BADGES
 
-[![version](https://images.microbadger.com/badges/version/alexandreoda/dnscrypt.svg)](https://microbadger.com/images/alexandreoda/dnscrypt)
-[![size](https://images.microbadger.com/badges/image/alexandreoda/dnscrypt.svg)](https://microbadger.com/images/alexandreoda/dnscrypt")
-[![build](https://img.shields.io/docker/build/alexandreoda/dnscrypt.svg)](https://hub.docker.com/r/alexandreoda/dnscrypt)
-[![automated](https://img.shields.io/docker/automated/alexandreoda/dnscrypt.svg)](https://hub.docker.com/r/alexandreoda/dnscrypt)
+[![pipeline status](https://gitlab.com/oda-alexandre/dnscrypt/badges/master/pipeline.svg)](https://gitlab.com/oda-alexandre/dnscrypt/commits/master)
 
 
 ## INTRODUCTION
