@@ -1,6 +1,6 @@
 # DNSCRYPT
 
-<img src="https://dnscrypt.info/_nuxt/img/dnscrypt.cd47d19.png" />
+<img src="https://dnscrypt.info/_nuxt/img/dnscrypt.cd47d19.png" width="200" height="200"/>
 
 
 ## INDEX
