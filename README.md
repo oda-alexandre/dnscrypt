@@ -2,7 +2,6 @@
 
 <img src="https://dnscrypt.info/_nuxt/img/dnscrypt.cd47d19.png" width="200" height="200"/>
 
-
 ## INDEX
 
 - [Badges](#BADGES)
@@ -11,11 +10,9 @@
 - [Install](#INSTALL)
 - [License](#LICENSE)
 
-
 ## BADGES
 
 [![pipeline status](https://gitlab.com/oda-alexandre/dnscrypt/badges/master/pipeline.svg)](https://gitlab.com/oda-alexandre/dnscrypt/commits/master)
-
 
 ## INTRODUCTION
 
@@ -31,18 +28,13 @@ Automatically updated on :
 
 - [docker hub public](https://hub.docker.com/r/alexandreoda/dnscrypt/).
 
-
 ## PREREQUISITES
 
 Use [docker](https://www.docker.com)
 
-
 ## INSTALL
 
-```
-docker run -ti --name dnscrypt --network host --restart=always alexandreoda/dnscrypt
-```
-
+```docker run -ti --name dnscrypt --network host --restart=always alexandreoda/dnscrypt```
 
 ## LICENSE
 
