@@ -12,7 +12,7 @@ RUN echo -e '\033[36;1m ******* INSTALL APP ******** \033[0m'; \
   dnscrypt-proxy
 
 RUN echo -e '\033[36;1m ******* ADD USER ******** \033[0m'; \
-  useradd -d /home/${USER} -m ${USER}; \
+  useradd -d ${HOME} -m ${USER}; \
   passwd -d ${USER}; \
   adduser ${USER} sudo
 
@@ -20,7 +20,7 @@ RUN echo -e '\033[36;1m ******* SELECT USER ******** \033[0m'
 USER ${USER}
 
 RUN echo -e '\033[36;1m ******* SELECT WORKING SPACE ******** \033[0m'
-WORKDIR /home/${USER}
+WORKDIR ${HOME}
 
 RUN echo -e '\033[36;1m ******* CLEANING ******** \033[0m'; \
   sudo apt-get --purge autoremove -y; \
