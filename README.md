@@ -4,11 +4,13 @@
 
 ## INDEX
 
-- [Badges](#BADGES)
-- [Introduction](#INTRODUCTION)
-- [Prerequisites](#PREREQUISITESITES)
-- [Install](#INSTALL)
-- [License](#LICENSE)
+- [DNSCRYPT](#dnscrypt)
+  - [INDEX](#index)
+  - [BADGES](#badges)
+  - [INTRODUCTION](#introduction)
+  - [PREREQUISITES](#prerequisites)
+  - [INSTALL](#install)
+  - [LICENSE](#license)
 
 ## BADGES
 
@@ -34,7 +36,7 @@ Use [docker](https://www.docker.com)
 
 ## INSTALL
 
-```docker run -ti --name dnscrypt --network host --restart=always alexandreoda/dnscrypt```
+```docker run -ti --name dnscrypt --network host --restart always alexandreoda/dnscrypt```
 
 ## LICENSE
 
