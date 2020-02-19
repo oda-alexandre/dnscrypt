@@ -4,7 +4,6 @@ LABEL authors https://www.oda-alexandre.com
 
 ENV USER dnscrypt
 ENV HOME /home/${USER}
-ENV VERSION 3.3.1.0
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN echo -e '\033[36;1m ******* INSTALL APP ******** \033[0m' && \
