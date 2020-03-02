@@ -7,7 +7,6 @@
 - [DNSCRYPT](#dnscrypt)
   - [INDEX](#index)
   - [BADGES](#badges)
-  - [FIRST UPDATE](#first-update)
   - [INTRODUCTION](#introduction)
   - [PREREQUISITES](#prerequisites)
   - [INSTALL](#install)
@@ -16,10 +15,6 @@
 ## BADGES
 
 [![pipeline status](https://gitlab.com/oda-alexandre/dnscrypt/badges/master/pipeline.svg)](https://gitlab.com/oda-alexandre/dnscrypt/commits/master)
-
-## FIRST UPDATE
-
-Date: 01-01-01
 
 ## INTRODUCTION
 
