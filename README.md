@@ -41,7 +41,12 @@ Use [docker](https://www.docker.com)
 ### DOCKER RUN
 
 ```\
-docker  run -ti --name dnscrypt --network host --restart unless-stopped --cap-add=NET_ADMIN alexandreoda/dnscrypt
+docker run -ti \
+--name dnscrypt \
+--restart unless-stopped \
+--network host \
+--cap-add=NET_ADMIN \
+alexandreoda/dnscrypt
 ```
 
 ### DOCKER COMPOSE
