@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  dnscrypt:
+    container_name: dnscrypt
+    image: alexandreoda/dnscrypt
+    restart: unless-stopped
+    network_mode: host
+    privileged: false
+    cap_add:
+      - NET_ADMIN

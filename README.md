@@ -10,6 +10,8 @@
   - [INTRODUCTION](#introduction)
   - [PREREQUISITES](#prerequisites)
   - [INSTALL](#install)
+    - [DOCKER RUN](#docker-run)
+    - [DOCKER COMPOSE](#docker-compose)
   - [LICENSE](#license)
 
 ## BADGES
@@ -24,7 +26,7 @@ Docker image of :
 
 Continuous integration on :
 
-- [gitlab](https://gitlab.com/oda-alexandre/dnscrypt/pipelines)
+- [gitlab pipelines](https://gitlab.com/oda-alexandre/dnscrypt/pipelines)
 
 Automatically updated on :
 
@@ -36,7 +38,26 @@ Use [docker](https://www.docker.com)
 
 ## INSTALL
 
-```docker run -ti --name dnscrypt --network host --restart always alexandreoda/dnscrypt```
+### DOCKER RUN
+
+```docker run -ti --name dnscrypt --network host --restart unless-stopped --cap-add=NET_ADMIN alexandreoda/dnscrypt
+```
+
+### DOCKER COMPOSE
+
+```yml
+version: "3.7"
+
+services:
+  dnscrypt:
+    container_name: dnscrypt
+    image: alexandreoda/dnscrypt
+    restart: unless-stopped
+    network_mode: host
+    privileged: false
+    cap_add:
+      - NET_ADMIN
+```
 
 ## LICENSE
 
