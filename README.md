@@ -3,11 +3,10 @@
 ![logo](https://assets.gitlab-static.net/uploads/-/system/project/avatar/12904442/dnscrypt.png)
 
 - [DNSCRYPT](#dnscrypt)
-  - [INDEX](#index)
   - [BADGES](#badges)
   - [INTRODUCTION](#introduction)
   - [PREREQUISITES](#prerequisites)
-  - [INSTALL](#install)
+  - [BUILD](#build)
     - [DOCKER RUN](#docker-run)
     - [DOCKER COMPOSE](#docker-compose)
   - [LICENSE](#license)
@@ -44,6 +43,7 @@ docker run -ti \
 --restart unless-stopped \
 --network host \
 --cap-add=NET_ADMIN \
+-v /etc/localtime:/etc/localtime:ro \
 alexandreoda/dnscrypt
 ```
 
@@ -61,6 +61,8 @@ services:
     privileged: false
     cap_add:
       - NET_ADMIN
+    volumes:
+      - "/etc/localtime:/etc/localtime:ro"
 ```
 
 ## LICENSE
